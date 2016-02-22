@@ -1,9 +1,8 @@
-Instructions for running HW4:
+Instructions:
 1.	typing "make" in command line to compile pthread_randomwalk.c to pthread_randomwalk, "make clean" to remove pthread_randomwalk
 2.	using following format to run pthread_randomwalk:
 		./pthread_randomwalk [graph_file] [graph_split_file] [number_of_threads] [k] [s]
 	for example:
 		./pthread_randomwalk ./graph/200K-graph.txt ./graph/200K-graph.txt.part.4 4 50 10
 	Note: [graph_split_file] can be any one of the split files, it is just used to count number of nodes in the graph
-3.	the above program will output a file named "randomwalk.result" in current directory with top s visited nods
-4.	using smaller [number_of_threads] (2 <= [number_of_threads]) will get higher efficiency
+3.	the above program will output a file named "randomwalk.result" in current directory with top s visited nodes

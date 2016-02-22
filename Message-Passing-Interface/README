@@ -1,7 +1,6 @@
-Intructions on running HW2:
-1.	there are two directory: ./parallel and ./serial, corresponding to serial version of pagerank and parallel version of pagerank
-2.	in each directory, using "make" in command line to compile corresponding source file MPI_xxx_pagerank.c into MPI_xxx_pagerank
-3.	using following format to run the serial program:
+Intructions:
+1.	in each directory, using "make" in command line to compile corresponding source file MPI_xxx_pagerank.c into MPI_xxx_pagerank
+2.	using following format to run the serial program:
 		./MPI_serial_pagerank [graph_file] [graph_split_file]
 	for example:
 		./MPI_serial_pagerank ./graph/200K-graph.txt ./graph/200K-graph.txt.part.4
@@ -10,7 +9,5 @@ Intructions on running HW2:
 	for example:
 		mpirun -machinefile machine4 -np 4 ./MPI_parallel_pagerank ./graph/200K-graph.txt ./graph/200K-graph.txt.part.4
 	Note: for serial program, the [graph_split_file] is only used to count number of nodes
-4.	the MPI_parallel_pagerank will generate an output file called pagerank_parallel.result
-5.	the MPI_serial_pagerank will generate an output file called pagerank_serial.result
-6.	sometimes the [host_file] will causing errors and I haven't figure out why, if happens, please use your [host_file] instead of mine
- 
+3.	the MPI_parallel_pagerank will generate an output file called pagerank_parallel.result
+4.	the MPI_serial_pagerank will generate an output file called pagerank_serial.result

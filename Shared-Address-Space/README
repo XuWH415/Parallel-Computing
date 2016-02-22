@@ -1,4 +1,4 @@
-Instructions for running HW3:
+Instructions:
 1.	typing "make" in command line to compile pthread_pagerank.c into pthread_pagerank, "make clean" to remove compiled pthread_pagerank
 2.	using following format to run pthread_pagerank:
 		./pthread_pagerank [graph_file] [graph_split_file] [number_of_threads]
@@ -6,4 +6,3 @@ Instructions for running HW3:
 		./pthread_pagerank ./graph/200K-graph.txt ./graph/200K-graph.txt.part.4 4
 	Note: [graph_split_file] can be any one of the split files, it is just used to count number of nodes in the graph
 3.	the above program will produce a file named "mypagerank.result" in current directory
-4.	using smaller [number_of_threads] (2 <= [number_of_threads]) will get higher efficiency
